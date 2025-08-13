@@ -15,106 +15,113 @@ It displays the IP address, MAC address, and vendor details of each connected de
 
 ## 📦 Installation
 
-1. **Clone the repository**
+### 1. Clone the repository
 ```bash
 git clone https://github.com/shafvantalat/NetWatcher.git
 cd NetWatcher
-Create a virtual environment
+```
 
-bash
-Copy
-Edit
+### 2. Create a virtual environment
+```bash
 python -m venv venv
-Activate the virtual environment
+```
+### 3. Activate the virtual environment
 
-Windows (CMD)
-
-bash
-Copy
-Edit
+In Windows (CMD)
+```
 venv\Scripts\activate
+```
+
 Windows (Git Bash)
-
-bash
-Copy
-Edit
+```bash
 source venv/Scripts/activate
+```
+
 Linux/Mac
-
-bash
-Copy
-Edit
+```
 source venv/bin/activate
-Install dependencies
+```
 
-bash
-Copy
-Edit
+### 4. Install dependencies
+```
 pip install -r requirements.txt
-▶️ Usage
-Run the script:
+```
 
-bash
-Copy
-Edit
+▶️ Usage
+### 5. Run the script in administrator privileges:
+
+#### If you are using VS Code, save all files and close the application.
+
+#### Then, right-click on the Visual Studio Code icon and select “Run as Administrator”.
+
+#### Alternatively, you can open Command Prompt or your terminal with administrator privileges and run the script from there.
+
+```
 python netwatcher.py
+```
 Example output:
 
-less
-Copy
-Edit
 [INFO] Updating MAC vendor database...
+
 [INFO] Vendor database updated successfully.
 
 Current Devices (3 total) at 20:41:49:
+
 IP Address         MAC Address        Vendor
+
 ------------------------------------------------------------
-192.168.229.89     16:fe:c6:2f:22:04  Unknown Vendor
-192.168.229.120    e8:aa:cb:23:c6:32  Samsung Electronics Co.,Ltd
-192.168.229.181    f8:3d:c6:6e:0d:3f  AzureWave Technology Inc.
-📂 Requirements
-Python 3.8+
 
-scapy
+192.168.xxx.xx    ff:ff:ff:ff:ff:ff  ASUSTeK Computer Inc.
 
-mac-vendor-lookup
+192.168.xxx.xx    ff:ff:ff:ff:ff:ff  Samsung Electronics Co.,Ltd
 
-requests
+192.168.xxx.xx    ff:ff:ff:ff:ff:ff  AzureWave Technology Inc.
 
-tabulate
+
+## ⚠️ Fix for Windows Users — Npcap Installation 
+### If you see:
+
+WARNING: No libpcap provider available ! pcap won't be used
+
+You need to install Npcap for full packet capturing support.
+
+### Download Npcap from: https://nmap.org/npcap/
+
+### During installation, check:
+
+#### ✅ "Install Npcap in WinPcap API-compatible mode"
+
+#### ✅ "Start Npcap driver at boot time"
+
+#### ✅ Restart your computer.
+
+### 📂 Requirements
+#### Python 3.8+
+#### scapy, mac-vendor-lookup, colorama
 
 You can install them all via:
-
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
-📜 License
-This project is licensed under the MIT License.
+```
 
-👤 Author
-Muhammed Shafvan
+## 📜 License
+### This project is licensed under the MIT License.
 
-GitHub: shafvantalat
 
-Portfolio: muhammed-shafvan.vercel.app
+# 👤 Author
 
-Email: muhammedshafvan269@gmail.com
+## Muhammed Shafvan
 
-yaml
-Copy
-Edit
+### GitHub: https://github.com/shafvantalat
+
+### Portfolio: https://shafvan.netlify.app
+
+### Instagram: https://instagram.com/shafvantalat_
+
+### Email: muhammedshafvan269@gmail.com
 
 ---
 
-If you want, I can **also add an "Updating Devices in Real-Time" section** so people know they can loop it for live monitoring.  
-Do you want me to include that?
+####  So far this program tested on only on Windows 11.
 
-
-
-
-
-
-
-
-Ask ChatGPT
+#### send me Reviews through Email or Instagram
